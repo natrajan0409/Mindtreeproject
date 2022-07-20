@@ -41,4 +41,5 @@ public class SignRegisterPage extends browserfactory {
 	public WebElement HdrSighInSearch= driver.findElement(By.xpath(SighInSearch)) ;
 	public WebElement HdrSearchBtn= driver.findElement(By.xpath(SearchBtn)) ;
 	
+	
 }

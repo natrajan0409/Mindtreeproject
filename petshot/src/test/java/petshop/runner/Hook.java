@@ -14,6 +14,7 @@ import org.junit.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import Utils.ReadConfirfile;
 import Utils.driverfactory;
 import io.cucumber.java.Scenario;
 
@@ -21,7 +22,9 @@ public class Hook  extends driverfactory{
 	private  static String  ScreenshotName;
 	@Before
 	public void setup() {
-		driver=getdriver("chrome");
+		ReadConfirfile conf= new ReadConfirfile();
+		
+		driver=getdriver(conf.getbrowser());
 	}
 	
 	@After

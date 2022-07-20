@@ -13,7 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class driverfactory<Readconfigfile> {
 public static WebDriver driver;
-
+public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 public WebDriver getdriver(String browser) {
 	
 	try {
@@ -49,5 +49,7 @@ public WebDriver getdriver(String browser) {
 	}
 	return driver;
 }
-
+public static synchronized WebDriver getDriver() {
+	return tlDriver.get();
+}
 }

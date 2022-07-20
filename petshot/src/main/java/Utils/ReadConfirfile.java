@@ -13,7 +13,7 @@ public ReadConfirfile() {
 // 		ReadConfirfile.class.getClassLoader().getSystemResourceAsStream("src\\main\\java\\Properties\\config.properties");
  		prop=new Properties();
 // 		prop.load(input);
- 		fis=new FileInputStream("src\\\\main\\\\java\\\\Properties\\\\config.properties");
+ 		fis=new FileInputStream("src\\main\\java\\Config\\Config.properties");
  		prop.load(fis);
  		
  	} catch(IOException e) {
@@ -28,4 +28,14 @@ public String getbrowser() {
 	}
 	return prop.getProperty("browser");
 }
+
+public String getURL() {
+	if(prop.getProperty("URL")==null)
+	{
+		return "";
+		
+	}
+	return prop.getProperty("URL");
+}
+
 }
