@@ -7,11 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import Utils.ReadConfirfile;
+import Utils.browserfactory;
 import Utils.driverfactory;
 
-public class Homepage extends driverfactory {
+public class Homepage extends browserfactory {
 	private WebDriver driver;
 	ReadConfirfile conf= new ReadConfirfile();
+	browserfactory obj =new browserfactory();
 	
 	String  jstoreHomeTitle ="//div[@id='Content']//h2";
 	String  enterStore = "Enter the Store";
@@ -32,8 +34,11 @@ public class Homepage extends driverfactory {
 	
 	public void enterJpetshoptURL() {
 	String URL =	conf.getURL();
+	String browser = conf.getbrowser();
 	if(URL!=null) {
+		obj.getdriver();
 		driver.get(URL);
+		driver.manage().window().maximize();
 	}else {
 		System.out.println("URL not avaliable");
 	}

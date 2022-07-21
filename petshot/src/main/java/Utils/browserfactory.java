@@ -14,39 +14,42 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class browserfactory {
 	public static WebDriver driver;
 
-public WebDriver getdriver(String browser) {
+public WebDriver getdriver() throws NullPointerException {
+
 	try {
 		ReadConfirfile file = new ReadConfirfile();
 		String browserName= file.getbrowser();
 		
-		if (browserName.equals("chrome")||browser.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
+		if (browserName.equals("chrome")) {
+			System.setProperty("webdriver.chrome.dirver", System.getProperty("user.dir")+"petshot/Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
+//			WebDriverManager.chromedriver().setup();
+
 		}
-		else if (browserName.equals("Firefox")||browser.equals("Firefox")) {
+		else if (browserName.equals("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver= new FirefoxDriver();
 		}
-		else if (browserName.equals("ID")||browser.equals("ID")) {
+		else if (browserName.equals("ID")) {
 			WebDriverManager.iedriver().setup();
 			driver= new InternetExplorerDriver();
 		}
-		else if (browserName.equals("Edge")||browser.equals("Edge")) {
+		else if (browserName.equals("Edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver= new EdgeDriver();
 		}
 		
-		else if (browserName.equals("operamin")||browser.equals("operamin")) {
+		else if (browserName.equals("operamin")) {
 			WebDriverManager.operadriver().setup();
 			driver= new OperaDriver();
 		}
 	} catch (Exception e) {
 		System.out.println("Unble to load browser"+e.getMessage());
 		e.printStackTrace();
-	}finally {
+	}
+	finally {
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
 	return driver;
 }
 }
-

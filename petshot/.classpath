@@ -13,48 +13,45 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
-		<attributes>
-			<attribute name="module" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/aopalliance-1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/apiguardian-api-1.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/bson-3.3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/commons-codec-1.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/cucumber-core-4.7.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/cucumber-expressions-7.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/cucumber-java-4.7.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/datatable-1.1.14.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/datatable-dependencies-1.1.14.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/extentreports-5.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/extentreports-cucumber4-adapter-1.2.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/freemarker-2.3.30.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/gherkin-5.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/gson-2.8.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/guava-19.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/guice-4.1.0-no_aop.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/httpclient-4.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/httpcore-4.4.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/httpmime-4.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/javax.inject-1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/jcommander-1.72.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/klov-reporter-5.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/lombok-1.18.12.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/mongodb-driver-3.3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/mongodb-driver-core-3.3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/reactive-streams-1.0.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/rxjava-3.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/snakeyaml-1.21.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/tag-expressions-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Arun/Downloads/jar_files/testng-7.1.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Arun/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar" sourcepath="C:/Users/Arun/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="io.github.bonigarcia"/>
+			<attribute name="maven.artifactId" value="webdrivermanager"/>
+			<attribute name="maven.version" value="4.2.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Arun/.m2/repository/io/cucumber/cucumber-testng/6.9.0/cucumber-testng-6.9.0.jar" sourcepath="C:/Users/Arun/.m2/repository/io/cucumber/cucumber-testng/6.9.0/cucumber-testng-6.9.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.groupId" value="io.cucumber"/>
+			<attribute name="maven.artifactId" value="cucumber-testng"/>
+			<attribute name="maven.version" value="6.9.0"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Arun/.m2/repository/io/cucumber/cucumber-junit/6.9.0/cucumber-junit-6.9.0.jar" sourcepath="C:/Users/Arun/.m2/repository/io/cucumber/cucumber-junit/6.9.0/cucumber-junit-6.9.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.groupId" value="io.cucumber"/>
+			<attribute name="maven.artifactId" value="cucumber-junit"/>
+			<attribute name="maven.version" value="6.9.0"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
