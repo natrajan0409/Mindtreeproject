@@ -21,9 +21,9 @@ public WebDriver getdriver() throws NullPointerException {
 		String browserName= file.getbrowser();
 		
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.dirver", System.getProperty("user.dir")+"petshot/Drivers/chromedriver.exe");
-			driver = new ChromeDriver();
-//			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver","D:/Ecelips worksapce/Mindtreeproject/petshot/Drivers/chromedriver.exe" );
+			driver= new ChromeDriver();
+			//			WebDriverManager.chromedriver().setup();
 
 		}
 		else if (browserName.equals("Firefox")) {
